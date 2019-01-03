@@ -11,13 +11,13 @@ class App extends Component {
         <CheckMobile
           yes={
             <div className={classes.AppMobile}>
-              <ProjectShowcase query="Macbook" />
+              <ProjectShowcase query="Animal" />
               <ProjectShowcase query="cartoon" />
             </div>
           }
           no={
             <div className={classes.AppDesktop}>
-              <ProjectShowcase query="Macbook" />
+              <ProjectShowcase query="animal" />
               <ProjectShowcase query="cartoon" />
             </div>
           }

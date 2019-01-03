@@ -3,7 +3,7 @@ import './Header.css';
 export default function Header() {
   return (
     <div>
-      <h2>React Slider</h2>
+      <h1>React Slider</h1>
     </div>
   );
 }

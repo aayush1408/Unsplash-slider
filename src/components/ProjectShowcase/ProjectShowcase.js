@@ -13,7 +13,7 @@ class ProjectShowcase extends Component {
     };
   }
   componentDidMount() {
-    axios.get(`https://api.unsplash.com/search/photos?client_id=${CLIENT_SECRET}&query=${this.props.query}/orientation=potrait`)
+    axios.get(`https://api.unsplash.com/search/photos?client_id=${CLIENT_SECRET}&query=${this.props.query}`)
       .then((imgs) => {
         this.setState({ imgUrls: [...imgs.data.results] });
         this.intervalId = setInterval(() => {
