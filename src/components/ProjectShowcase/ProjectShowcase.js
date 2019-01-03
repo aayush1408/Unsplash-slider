@@ -32,12 +32,12 @@ class ProjectShowcase extends Component {
   render() {
     const { imgUrls, currentImgIndex } = this.state;
     return (
-      <div className={classes.slider}>
+      <div>
         {imgUrls.length > 0 &&
           <img
             alt="Img1"
             src={imgUrls[currentImgIndex].urls.small}
-            style={{ width: 460, height: 400 }}
+            className={classes.slider}
           />
         }
       </div>

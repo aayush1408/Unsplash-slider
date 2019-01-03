@@ -1,20 +1,19 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import ProjectShowcase from './components/ProjectShowcase/ProjectShowcase';
 import classes from './App.css';
 import CheckMobile from './components/CheckMobile';
-
+import Header from './components/Header/Header';
 class App extends Component {
   render() {
     return (
       <div>
+        <Header />
         <CheckMobile
           yes={
-            <Fragment>
-              <div className={classes.AppMobile}>
-                <ProjectShowcase query="Macbook" />
-                <ProjectShowcase query="cartoon" />
-              </div>
-            </Fragment>
+            <div className={classes.AppMobile}>
+              <ProjectShowcase query="Macbook" />
+              <ProjectShowcase query="cartoon" />
+            </div>
           }
           no={
             <div className={classes.AppDesktop}>
